@@ -21,7 +21,7 @@ window.onload = function () {
         console.log('Evening Theme');
 
         typeWriter(window.location.toString().includes('index_DE.html') ?
-            "Genieße deinen Abend" : "Enjoy your evening");
+            "Schönen Abend" : "Enjoy your evening");
     }
     else if (curDate.getHours() < 12) {
         /* Morning Time */
@@ -41,6 +41,6 @@ window.onload = function () {
         console.log('Day Theme');
 
         typeWriter(window.location.toString().includes('index_DE.html') ?
-            "Hoffe Du hast einen schönen Tag" : "Hope you're having a good day");
+            "Hab einen guten Tag" : "Hope you're having a good day");
     }
 };
