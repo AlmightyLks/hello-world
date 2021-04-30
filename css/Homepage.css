@@ -33,6 +33,12 @@
 	height: 100vh;
 	font-weight: 500;
 }
+
+#Home a{
+	position: absolute;
+	bottom: 7.5%;
+}
+
 #Home h1 {
 	padding-top: 10vh;
 	padding-bottom: 3vh;

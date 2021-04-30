@@ -1,0 +1,98 @@
+/* Credits: https://codepen.io/wilder_taype/pen/Nbmwbb */
+
+#overview {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 1% 2%;
+    max-width: 1440px;
+    border-radius: 5px;
+    background: #ecf0f1;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .3);
+}
+
+#overview h1,
+#overview h2,
+#overview h3 {
+    text-align: center;
+    font-family: 'Baloo Tamma', cursive;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.UpperTopic li {
+    color: #2c3e50;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'Raleway', serif;
+}
+
+.LowerTopic li {
+    color: #2c3e50;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'Raleway', serif;
+}
+
+
+/*TopicListing = style grid*/
+
+.UpperTopic {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.UpperTopic .UpperTopicItem {
+    min-width: 24%;
+    margin: 2% .35%;
+    display: inline-flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.UpperTopic .UpperTopicItem:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+}
+
+.UpperTopic .TopicBox {
+    width: 100%;
+    height: 100vh;
+    padding: 1% 2%;
+    background: #fff;
+    min-height: 200px;
+    max-height: 220px;
+    box-sizing: border-box;
+}
+
+
+/*Styles */
+
+.LowerTopic {
+    list-style-type: disc;
+}
+
+
+/* responsive grid*/
+
+@media (max-width: 970px) {
+    .UpperTopic .UpperTopicItem {
+        width: 230px;
+    }
+}
+
+@media (max-width: 425px) {
+    .UpperTopic .UpperTopicItem {
+        width: 100%;
+    }
+}
