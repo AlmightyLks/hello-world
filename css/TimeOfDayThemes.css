@@ -1,0 +1,11 @@
+.MorningGradient {
+    background: linear-gradient(-45deg, #344b52, #587983, #9db3b4, #cfd3ca);
+}
+
+.DayGradient {
+    background: linear-gradient(-45deg, #c5ec44, #b2f574, #d2fa51e8, #89ec2cb7);
+}
+
+.EveningGradient {
+    background: linear-gradient(-45deg, #e48a78a3, #ee9ebaa2, #74e8f5bc, #4ad6e682);
+}

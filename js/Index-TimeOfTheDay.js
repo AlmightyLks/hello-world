@@ -1,16 +1,16 @@
 function typeWriter(text) {
-    let hlElement = document.getElementById("hl");
+    let hlElement = document.getElementById("typeWriterHeadline");
     let splitTxt = text.split('')
     for (let i = 0; i < splitTxt.length; i++) {
-        (function (i) {
-            setTimeout(function () {
+        (function(i) {
+            setTimeout(function() {
                 hlElement.innerHTML += splitTxt[i]
             }, 75 * i);
         })(i);
     };
 }
 
-window.onload = function () {
+window.onload = function() {
     let curDate = new Date();
 
     if (curDate.getHours() >= 19 || curDate.getHours() < 2) {
@@ -22,8 +22,7 @@ window.onload = function () {
 
         typeWriter(window.location.toString().includes('index_DE.html') ?
             "Schönen Abend" : "Enjoy your evening");
-    }
-    else if (curDate.getHours() < 12) {
+    } else if (curDate.getHours() < 12) {
         /* Morning Time */
         document.getElementById("Home").classList.add('MorningGradient');
         document.getElementById("AboutMe").classList.add('MorningGradient');
@@ -32,8 +31,7 @@ window.onload = function () {
 
         typeWriter(window.location.toString().includes('index_DE.html') ?
             "Guten Morgen" : "Good morning");
-    }
-    else {
+    } else {
         /* Day Time */
         document.getElementById("Home").classList.add('DayGradient');
         document.getElementById("AboutMe").classList.add('DayGradient');
